@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RouletteGame
+namespace Roulette.Game
 {
     public class Bet
     {

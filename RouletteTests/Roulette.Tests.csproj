@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RouletteGame\RouletteGame.csproj" />
+    <ProjectReference Include="..\RouletteGame\Roulette.Game.csproj" />
   </ItemGroup>
 
 </Project>

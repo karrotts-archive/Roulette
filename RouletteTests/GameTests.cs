@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace RouletteTests
+namespace Roulette.Tests
 {
     [TestClass]
     public class GameTests
