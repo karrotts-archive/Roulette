@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteGame", "RouletteGame\RouletteGame.csproj", "{8CE966BF-8725-4FDB-BB22-116CABEF784D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteTests", "RouletteTests\RouletteTests.csproj", "{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CE966BF-8725-4FDB-BB22-116CABEF784D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE966BF-8725-4FDB-BB22-116CABEF784D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE966BF-8725-4FDB-BB22-116CABEF784D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE966BF-8725-4FDB-BB22-116CABEF784D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF698CF7-A866-4835-B7C1-B687188105EB}
+	EndGlobalSection
+EndGlobal
