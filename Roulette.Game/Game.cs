@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Roulette.Game
+namespace RouletteGame
 {
     public static class Game
     {
-        public static double PlayRound(List<Bet> Bets)
+        public static double PlayRound(List<Bet> Bets, string result)
         {
+            //quick convert to proper format
+            result = result == "00" ? "37" : result;
+            byte numResult = byte.Parse(result);
+
             double totalPayout = 0d;
-            byte result = Spin();
             foreach (Bet bet in Bets)
             {
-                if(IsWinningBet(bet, result))
+                if(IsWinningBet(bet, numResult))
                 {
                     totalPayout += bet.WinAmount();
                 }
@@ -23,13 +26,13 @@ namespace Roulette.Game
         public static byte Spin()
         {
             Random random = new Random();
-            return (byte)random.Next(0, 37);
+            return (byte)random.Next(38, 76);
         }
 
         public static byte Spin(int seed)
         {
             Random random = new Random(seed);
-            return (byte)random.Next(0, 37);
+            return (byte)random.Next(38, 76);
         }
 
         public static bool IsWinningBet(Bet bet, int result)

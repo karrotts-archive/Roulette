@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using RouletteGame;
 
 namespace Roulette
 {
@@ -8,7 +9,7 @@ namespace Roulette
         static void Main(string[] args)
         {
             Renderer.Initialize();
-            Renderer.SpinnerAnimation();
+            Console.WriteLine(Renderer.SpinnerAnimation(Game.Spin()));
         }
     }
 }

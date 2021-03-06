@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RouletteGame\Roulette.Game.csproj" />
+    <ProjectReference Include="..\Roulette.Game\Roulette.Game.csproj" />
   </ItemGroup>
 
 </Project>

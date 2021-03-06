@@ -11,6 +11,8 @@ namespace Roulette
 
         public static void Initialize()
         {
+            Console.CursorVisible = false;
+            Console.SetWindowSize(100, 35);
             Console.BackgroundColor = DefaultBackgroundColor;
             Console.ForegroundColor = ConsoleColor.Black;
             Console.Clear();
@@ -48,7 +50,7 @@ namespace Roulette
             }
         }
 
-        public static void SpinnerAnimation()
+        public static string SpinnerAnimation(int iterations)
         {
             string[] sequence = new string[]
             {
@@ -57,32 +59,22 @@ namespace Roulette
                     "27", "10", "25", "29", "12", " 8", "19", "31", "18", " 6",
                     "21", "33", "16", " 4", "23", "35", "14", " 2"
             };
-            int sequenceNumber = 0;
 
-            while (true)
+            int sequenceNumber = 0;
+            while (iterations > 0)
             {
                 Console.Clear();
-                //Console.Beep();
-                RenderRouletteSpinner(sequence[sequenceNumber]);
+                CenterText("SPINNING...", ConsoleColor.White, ConsoleColor.Black);
                 sequenceNumber = sequenceNumber + 1 == sequence.Length ? 0 : sequenceNumber + 1;
-                Thread.Sleep(1);
+                RenderRouletteSpinner(sequence[sequenceNumber]);
+                Thread.Sleep(1000/iterations);
+                iterations--;
             }
+            return sequence[sequenceNumber];
         }
 
         public static void RenderRouletteBoard()
         {
-        }
-    }
-
-    public class SpinnerRowItem
-    {
-        public ConsoleColor RowColor;
-        public string Text;
-        
-        public SpinnerRowItem(string text, ConsoleColor color)
-        {
-            Text = text;
-            RowColor = color;
         }
     }
 }

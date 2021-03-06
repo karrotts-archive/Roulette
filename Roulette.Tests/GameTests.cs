@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using RouletteGame;
 
 namespace Roulette.Tests
 {
@@ -9,19 +10,19 @@ namespace Roulette.Tests
         [TestMethod]
         public void SpinWithSeedDoesNotProvideRandomNumber()
         {
-            Assert.AreEqual(RouletteGame.Game.Spin(12), RouletteGame.Game.Spin(12));
+            Assert.AreEqual(Game.Spin(12), Game.Spin(12));
         }
 
         [TestMethod]
         public void IsWinningBetWithOneWinningValue()
         {
-            RouletteGame.Bet bet = new RouletteGame.Bet()
+            Bet bet = new Bet()
             {
-                WinningNumbers = new int[] { 1 },
+                WinningNumbers = new byte[] { 1 },
                 Payout = 35,
                 BetAmount = 100
             };
-            Assert.AreEqual(true, RouletteGame.Game.IsWinningBet(bet, 1));
+            Assert.AreEqual(true, Game.IsWinningBet(bet, 1));
         }
 
         [TestMethod]
@@ -29,7 +30,7 @@ namespace Roulette.Tests
         {
             RouletteGame.Bet bet = new RouletteGame.Bet()
             {
-                WinningNumbers = new int[] { 2 },
+                WinningNumbers = new byte[] { 2 },
                 Payout = 35,
                 BetAmount = 100
             };

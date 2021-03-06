@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Roulette.Game
+namespace RouletteGame
 {
     public enum BetType : byte
     {
