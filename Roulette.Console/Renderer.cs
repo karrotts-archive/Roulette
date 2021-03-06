@@ -25,11 +25,16 @@ namespace Roulette
             Console.BackgroundColor = backgroundColor;
             Console.Write(text + "\n");
             Console.BackgroundColor = DefaultBackgroundColor;
+            Console.ForegroundColor = ConsoleColor.Black;
         }
 
-        public static void WriteLine(string text)
+        public static void Line()
         {
-
+            for(int i = 0; i < Console.WindowWidth; i++)
+            {
+                Console.Write("_");
+            }
+            Console.WriteLine("");
         }
 
         public static void RenderRouletteSpinner(string highlightedNumber)
@@ -39,13 +44,14 @@ namespace Roulette
             {
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.BackgroundColor = DefaultBackgroundColor;
-                Console.Write(String.Format("{0," + ((Console.WindowWidth / 2) - 30) + "}", ""));
+                Console.Write(String.Format("{0," + ((Console.WindowWidth / 2) - 34) + "}", ""));
                 for (int j = 0; j < 11; j++)
                 {
                     Console.BackgroundColor = spinner.SpinnerGrid[i, j].color;
                     Console.Write(spinner.SpinnerGrid[i, j].text);
                 }
                 Console.BackgroundColor = DefaultBackgroundColor;
+                Console.ForegroundColor = ConsoleColor.Black;
                 Console.Write("\n");
             }
         }
@@ -64,7 +70,7 @@ namespace Roulette
             while (iterations > 0)
             {
                 Console.Clear();
-                CenterText("SPINNING...", ConsoleColor.White, ConsoleColor.Black);
+                CenterText("SPINNING...\n", ConsoleColor.White, ConsoleColor.Black);
                 sequenceNumber = sequenceNumber + 1 == sequence.Length ? 0 : sequenceNumber + 1;
                 RenderRouletteSpinner(sequence[sequenceNumber]);
                 Thread.Sleep(1000/iterations);
@@ -73,8 +79,5 @@ namespace Roulette
             return sequence[sequenceNumber];
         }
 
-        public static void RenderRouletteBoard()
-        {
-        }
     }
 }

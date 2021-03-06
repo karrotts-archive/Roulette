@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Threading;
+using System.Collections.Generic;
 using RouletteGame;
 
 namespace Roulette
@@ -8,8 +8,9 @@ namespace Roulette
     {
         static void Main(string[] args)
         {
+            GameController controller = new GameController(5000);
             Renderer.Initialize();
-            Console.WriteLine(Renderer.SpinnerAnimation(Game.Spin()));
+            Menus.MainMenu(controller);
         }
     }
 }
