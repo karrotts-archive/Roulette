@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette.Game", "RouletteGame\Roulette.Game.csproj", "{8CE966BF-8725-4FDB-BB22-116CABEF784D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.Console", "Roulette.Console\Roulette.Console.csproj", "{F3446CFF-89CB-4810-97AF-8CDD00BA7C52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette.Tests", "RouletteTests\Roulette.Tests.csproj", "{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.Game", "Roulette.Game\Roulette.Game.csproj", "{61B256B7-D1AC-47FE-884F-01982BB55E63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette.Console", "RouletteConsole\Roulette.Console.csproj", "{0E70626E-1A8E-4656-9039-19CA00F5D347}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roulette.Tests", "Roulette.Tests\Roulette.Tests.csproj", "{9FF9666A-F303-45AF-9ABB-31682468E1D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8CE966BF-8725-4FDB-BB22-116CABEF784D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CE966BF-8725-4FDB-BB22-116CABEF784D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CE966BF-8725-4FDB-BB22-116CABEF784D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CE966BF-8725-4FDB-BB22-116CABEF784D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B02C084-3BAA-40C0-9FA3-0E581DBEE7EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E70626E-1A8E-4656-9039-19CA00F5D347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E70626E-1A8E-4656-9039-19CA00F5D347}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E70626E-1A8E-4656-9039-19CA00F5D347}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E70626E-1A8E-4656-9039-19CA00F5D347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3446CFF-89CB-4810-97AF-8CDD00BA7C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3446CFF-89CB-4810-97AF-8CDD00BA7C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3446CFF-89CB-4810-97AF-8CDD00BA7C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3446CFF-89CB-4810-97AF-8CDD00BA7C52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B256B7-D1AC-47FE-884F-01982BB55E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B256B7-D1AC-47FE-884F-01982BB55E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B256B7-D1AC-47FE-884F-01982BB55E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B256B7-D1AC-47FE-884F-01982BB55E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF9666A-F303-45AF-9ABB-31682468E1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF9666A-F303-45AF-9ABB-31682468E1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF9666A-F303-45AF-9ABB-31682468E1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF9666A-F303-45AF-9ABB-31682468E1D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

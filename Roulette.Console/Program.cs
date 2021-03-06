@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Threading;
 
-namespace Roulette.Console
+namespace Roulette
 {
     class Program
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Hello World!");
+            Renderer.Initialize();
+            Renderer.SpinnerAnimation();
         }
     }
 }
