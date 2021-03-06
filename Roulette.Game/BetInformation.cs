@@ -23,10 +23,11 @@ namespace RouletteGame
 
     public class BetInformation
     {
-        public readonly Dictionary<BetType, BetDetails> Information;
+        public Dictionary<BetType, BetDetails> Information;
         
-        BetInformation()
+        public BetInformation()
         {
+            Information = new Dictionary<BetType, BetDetails>();
             Information.Add(BetType.Numbers, new BetDetails(new List<byte[]>(), 35));
             Information.Add(BetType.Evens, new BetDetails(new List<byte[]>()
             {
@@ -42,7 +43,7 @@ namespace RouletteGame
             }, 1));
             Information.Add(BetType.Blacks, new BetDetails(new List<byte[]>()
             {
-                new byte[] {1, 3, 5, 7, 9, 12, 14, 16, 18, 21, 23, 25, 27, 28, 30, 32, 36}
+                new byte[] {2, 4, 6, 8, 10, 11, 13, 15, 17, 19, 20, 22, 24, 26, 29, 31, 33, 35}
             }, 1));
             Information.Add(BetType.Lows, new BetDetails(new List<byte[]>()
             { 
@@ -183,8 +184,8 @@ namespace RouletteGame
 
     public class BetDetails
     {
-        List<byte[]> WinningSets;
-        byte Payout;
+        public List<byte[]> WinningSets;
+        public byte Payout;
 
         public BetDetails(List<byte[]> WinningSets, byte Payout)
         {
